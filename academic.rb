@@ -56,6 +56,14 @@ class Subject    # aka Module
     return merged
   end
 
+   def otherMethod arg1, arg2
+      # some code
+      # more code
+      # etc
+      # etc
+      # etc
+   end
+
   private
 
   def computeTopicTotal 
