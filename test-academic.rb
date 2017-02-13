@@ -10,7 +10,7 @@ class TestSubject < MiniTest::Test
   end
 
   def teardown
-      @subject = @topic1 = @topic2 = @topic = nil
+      @subject = @topic1 = @topic2 = @topic3 = nil
   end
   
   def test_find_topic
@@ -54,7 +54,10 @@ class TestSubject < MiniTest::Test
    end
 
    def test_merge_topics
-     # To be completed
+      @subject.addTopic @topic
+     @subject.addTopic @topic2
+     result = @subject.mergeTopics('topic 1','topic 2','merged')
+     assert result
    end
 
    def test_other_method
