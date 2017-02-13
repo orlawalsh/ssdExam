@@ -10,7 +10,7 @@ class TestSubject < MiniTest::Test
   end
 
   def teardown
-      @subject = @topic1 = @topic2 = @topic3 = nil
+      @subject = @topic1 = @topic2 = @topic = nil
   end
   
   def test_find_topic
